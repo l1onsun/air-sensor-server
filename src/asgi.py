@@ -1,5 +1,7 @@
-from fastapi import FastAPI
 import datetime
+
+from fastapi import FastAPI
+
 app = FastAPI()
 
 
@@ -7,9 +9,11 @@ app = FastAPI()
 def index():
     return "hi hi v0.0.2"
 
+
 @app.get("/healthcheck")
 def healthcheck():
     return {"status": "ok"}
+
 
 @app.get("/test")
 def test(temp: float, co2: int, humi: int, date: float):
