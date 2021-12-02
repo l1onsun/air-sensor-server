@@ -1,6 +1,5 @@
 from fire import Fire
 import subprocess
-import sys
 
 
 def run():
