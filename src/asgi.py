@@ -1,5 +1,5 @@
 import datetime
-import sqlite3 as sql
+
 
 from fastapi import FastAPI
 
@@ -25,14 +25,4 @@ def test(temp: float, co2: int, humi: int, date: float):
     print(f"get co2: {co2}")
     print(f"get humi: {humi}")
 
-    with sql.connect("database.db") as con:
-        cur = con.cursor()
 
-        cur.execute(""" CREATE TABLE IF NOT EXISTS info (
-            date TEXT NOT NULL
-            temp REAL 
-            co2 INT
-            humi INT        
-            )""")
-        cur.execute(""" INSERT INTO info VALUES(?,?,?,?)""", (str(date),temp,co2,humi))
-    con.close()
