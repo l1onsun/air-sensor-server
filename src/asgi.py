@@ -1,6 +1,5 @@
 import datetime
 
-
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -24,5 +23,3 @@ def test(temp: float, co2: int, humi: int, date: float):
     print(f"get temp: {temp}")
     print(f"get co2: {co2}")
     print(f"get humi: {humi}")
-
-
