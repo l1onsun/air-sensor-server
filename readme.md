@@ -7,10 +7,10 @@
 
 ## Запуск в debug режиме
 ```shell
-> python manage.py debug-run
+> python manage.py run-debug
 ```
 
 ## Запуск в prod режиме
 ```shell
-> python manage.py run
+> python manage.py run-release
 ```
