@@ -2,3 +2,6 @@ fastapi
 uvicorn
 
 fire
+pip-tools
+python-dotenv
+pre-commit

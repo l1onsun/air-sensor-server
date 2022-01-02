@@ -1,9 +1,14 @@
+import subprocess  # nosec
+
 from fire import Fire
-import subprocess
 
 
-def run():
-    subprocess.run(["uvicorn", "src.asgi:app"])
+def run_debug():
+    subprocess.run(["uvicorn", "air_sensor.asgi:app"])  # nosec
+
+
+def run_release():
+    subprocess.run(["uvicorn", "air_sensor.asgi:app"])  # nosec
 
 
 if __name__ == "__main__":
