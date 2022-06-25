@@ -141,3 +141,4 @@ cython_debug/
 
 database.db
 src/database.db
+local/*

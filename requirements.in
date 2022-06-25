@@ -1,5 +1,6 @@
 fastapi
 uvicorn
+prometheus-client
 
 fire
 pip-tools
